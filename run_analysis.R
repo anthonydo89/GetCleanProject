@@ -79,5 +79,5 @@ run_analysis <- function() {
   DataSetMelt=melt(DataSet,id=c("Subject","Activity"),measure.vars=DataSetVars[1:66])
   ## print(colnames(DataSetMelt))
   DataSetCast=dcast(DataSetMelt,Subject + Activity~variable,mean)
-  write.table(DataSetCast,file='DataSetCast.txt',row.name=FALSE)
+  write.table(DataSetCast,file='TidyDataSet.txt',row.name=FALSE)
 }
