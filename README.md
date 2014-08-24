@@ -25,18 +25,18 @@ The mean of each saved variable for each observation of a subject doing a certai
 CODE BOOK
 
   activity_labels.txt (6 x 2, char)
-   1 WALKING
-   2 WALKING_UPSTAIRS
-   3 WALKING_DOWNSTAIRS
-   4 SITTING
-   5 STANDING
-   6 LAYING
-
+  
+    1 WALKING
+    2 WALKING_UPSTAIRS
+    3 WALKING_DOWNSTAIRS
+    4 SITTING
+    5 STANDING
+    6 LAYING
+  
   features.txt (561 x 2, char)
-    1 tBodyAcc-mean()-X
-    ...
-    90 tBodyAccJerk-max()-X
-    ...
+  
+    1 tBodyAcc-mean()-X...
+    90 tBodyAccJerk-max()-X...
     561 angle(Z,gravityMean)
     
     Signals were measured with the accelerometer and gyroscope in 3 directions, denoted by the "Acc" and "Gyro" in the variable names and "-X", "-Y" and "-Z" for different directions.
@@ -66,15 +66,12 @@ CODE BOOK
       angle(): Angle between two vectors.
 
   subject_test (2947 x 1), subject_train.txt (7352 x 1)
-    contain subject (ranging from 1 to 30) being observed
+     contain subject (ranging from 1 to 30) being observed
 
   Y_test.txt (2947 x 1), Y_train.txt (7352 x 1)  
-    contain activity (ranging from 1 to 6) being observed
+     contain activity (ranging from 1 to 6) being observed
   
   X_test.txt (2947 x 561), X_train.txt (7352 x 561)
-    contain observations of each variable; variable measured by each column corresponds to row number in features.txt
-    Acceleration data was in gravitational units (g) and angular data was in radians/second, but all data was normalized to be in the range [-1,1].
-
-  
-  
-  
+   contain observations of each variable; variable measured by each column corresponds to row number in features.txt
+   
+   Acceleration data was in gravitational units (g) and angular data was in radians/second, but all data was normalized to be in the range [-1,1].
