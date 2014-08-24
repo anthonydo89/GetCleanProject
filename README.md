@@ -2,6 +2,7 @@ The function run_analysis takes in the acclerometer and gyroscope data taken fro
 
 
 STUDY DESIGN
+
 Imported the following raw data files:
 
 'activity_labels.txt': contains the activity labels
@@ -22,6 +23,7 @@ The mean of each saved variable for each observation of a subject doing a certai
  
 
 CODE BOOK
+
   activity_labels.txt (6 x 2, char)
    1 WALKING
    2 WALKING_UPSTAIRS
